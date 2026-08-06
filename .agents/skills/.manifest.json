@@ -1,0 +1,108 @@
+{
+  "skills": {
+    "huuma-ui-app-and-build": {
+      "source": {
+        "owner": "huuma-studio",
+        "repo": "ui",
+        "ref": "main",
+        "subpath": [
+          "skills",
+          "huuma-ui-app-and-build"
+        ]
+      },
+      "contentHash": "sha256-d3cbc930f42c38cdca7ef3103b0f71e10660dc2b27f5d72c10542baa4b7bdf12",
+      "installedAt": "2026-08-06T15:40:38.633Z"
+    },
+    "huuma-ui-foundation": {
+      "source": {
+        "owner": "huuma-studio",
+        "repo": "ui",
+        "ref": "main",
+        "subpath": [
+          "skills",
+          "huuma-ui-foundation"
+        ]
+      },
+      "contentHash": "sha256-032ba2815d4ffa375205c5f3de289607ac60df628c3f6841822459724fea536b",
+      "installedAt": "2026-08-06T15:40:38.633Z"
+    },
+    "huuma-ui-i18n": {
+      "source": {
+        "owner": "huuma-studio",
+        "repo": "ui",
+        "ref": "main",
+        "subpath": [
+          "skills",
+          "huuma-ui-i18n"
+        ]
+      },
+      "contentHash": "sha256-412a6e46e86775ebd9a93e0176ffd47af25364b3937a2d45439fb7bd991337bb",
+      "installedAt": "2026-08-06T15:40:38.633Z"
+    },
+    "huuma-ui-islands-interactivity": {
+      "source": {
+        "owner": "huuma-studio",
+        "repo": "ui",
+        "ref": "main",
+        "subpath": [
+          "skills",
+          "huuma-ui-islands-interactivity"
+        ]
+      },
+      "contentHash": "sha256-fc30d9d6d725961ec73fe84636ed827f2bc0d080dbfd0f172150561d24bd343d",
+      "installedAt": "2026-08-06T15:40:38.633Z"
+    },
+    "huuma-ui-remote-functions": {
+      "source": {
+        "owner": "huuma-studio",
+        "repo": "ui",
+        "ref": "main",
+        "subpath": [
+          "skills",
+          "huuma-ui-remote-functions"
+        ]
+      },
+      "contentHash": "sha256-62308fb95a92e2b4c6a16afacdfe6f8129f2c07563dd0e4b8ead83e7dcc94220",
+      "installedAt": "2026-08-06T15:40:38.633Z"
+    },
+    "huuma-ui-routing-and-data": {
+      "source": {
+        "owner": "huuma-studio",
+        "repo": "ui",
+        "ref": "main",
+        "subpath": [
+          "skills",
+          "huuma-ui-routing-and-data"
+        ]
+      },
+      "contentHash": "sha256-67f40d567658f2be4ede46c98eb5494465df6a9ee247aaa18f2001b496fd677e",
+      "installedAt": "2026-08-06T15:40:38.633Z"
+    },
+    "huuma-ui-signals-and-state": {
+      "source": {
+        "owner": "huuma-studio",
+        "repo": "ui",
+        "ref": "main",
+        "subpath": [
+          "skills",
+          "huuma-ui-signals-and-state"
+        ]
+      },
+      "contentHash": "sha256-5f1b06d37d6ec1fbd73269e1dfc02d5a91858ad2eace81bc270a6ec95728ad0a",
+      "installedAt": "2026-08-06T15:40:38.633Z"
+    },
+    "huuma-ui-troubleshooting": {
+      "source": {
+        "owner": "huuma-studio",
+        "repo": "ui",
+        "ref": "main",
+        "subpath": [
+          "skills",
+          "huuma-ui-troubleshooting"
+        ]
+      },
+      "contentHash": "sha256-fd76b83778356693d4f6a3b58c5bafba58e07c5708f246f101f15ae8b66144c1",
+      "installedAt": "2026-08-06T15:40:38.633Z"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "imports": {
+    "@huuma/route": "jsr:@huuma/route@^0.2.1",
+    "@huuma/ui": "jsr:@huuma/ui@^0.2.9",
+    "@huuma/theme": "jsr:@huuma/theme@^0.2.1",
+    "tailwindcss": "npm:tailwindcss@^4",
+    "@tailwindcss/cli": "npm:@tailwindcss/cli@^4",
+    "@/": "./src/",
+    "@app/": "./app/",
+    "@manifest/": "./.huuma/"
+  },
+  "nodeModulesDir": "auto",
+  "lint": {
+    "plugins": ["jsr:@huuma/ui/lint"]
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "@huuma/ui",
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
+  },
+  "tasks": {
+    "dev": "deno -ERWN --allow-run --watch dev.ts",
+    "bundle": "deno -ERWN --allow-run dev.ts --bundle",
+    "start": "deno -ERN app.ts"
+  }
+}
