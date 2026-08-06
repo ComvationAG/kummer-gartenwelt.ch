@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --color-india-green-50: #e9fbe9;
+  --color-india-green-100: #d4f7d4;
+  --color-india-green-200: #a9efa9;
+  --color-india-green-300: #7ee77e;
+  --color-india-green-400: #53df53;
+  --color-india-green-500: #28d728;
+  --color-india-green-600: #20ac20;
+  --color-india-green-700: #188118;
+  --color-india-green-800: #105610;
+  --color-india-green-900: #082b08;
+  --color-india-green-950: #061e06;
+}
