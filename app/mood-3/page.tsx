@@ -1,8 +1,8 @@
 import type { Metadata } from "@huuma/ui/server";
 
 export const metadata: Metadata = {
-  title: "Terra — Mood 02 · Kummer Gartenbau",
-  description: "Gestaltungsrichtung Terra: Palette, Typografie und Bildkomposition.",
+  title: "Aurum — Mood 03 · Kummer Gartenbau",
+  description: "Gestaltungsrichtung Aurum: Palette, Typografie und Bildkomposition.",
 };
 
 const green = [
@@ -11,13 +11,13 @@ const green = [
   ["800", "#105610"], ["900", "#082b08"], ["950", "#061e06"],
 ];
 
-const teal = [
-  ["50", "#eff5ef"], ["100", "#e0ebe0"], ["200", "#c0d8c0"], ["300", "#a1c4a1"],
-  ["400", "#82b082"], ["500", "#629d62"], ["600", "#4f7d4f"], ["700", "#3b5e3b"],
-  ["800", "#273f27"], ["900", "#141f14"], ["950", "#0e160e"],
+const bark = [
+  ["50", "#faf8ea"], ["100", "#f6f1d5"], ["200", "#ede4ab"], ["300", "#e3d682"],
+  ["400", "#dac958"], ["500", "#d1bb2e"], ["600", "#a79625"], ["700", "#7d701c"],
+  ["800", "#544b12"], ["900", "#2a2509"], ["950", "#1d1a06"],
 ];
 
-// Verified-loading Unsplash CDN URLs — natural imagery, warmed by the .terra filter.
+// Verified-loading Unsplash CDN URLs — natural imagery, warmed by the .lexend filter.
 const img = (id: string, w: number, h: number) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&h=${h}&q=80`;
 
@@ -49,9 +49,9 @@ export default () => {
           <span class="kicker text-[10px] text-stone-500">Zurück</span>
         </a>
         <div class="flex items-center gap-3">
-          <span class="block w-2 h-2 rounded-full bg-muted-teal-500 shadow-[0_0_12px_2px_rgba(98,157,98,0.5)]" />
+          <span class="block w-2 h-2 rounded-full bg-olive-bark-500 shadow-[0_0_12px_2px_rgba(209,187,46,0.5)]" />
           <span class="kicker text-[10px] text-stone-500">
-            Mood 02 · Terra
+            Mood 03 · Aurum
           </span>
         </div>
       </header>
@@ -71,21 +71,21 @@ export default () => {
               class="reveal kicker text-[11px] text-stone-500 mb-6"
               style="animation-delay:240ms"
             >
-              Gestaltungsrichtung 02
+              Gestaltungsrichtung 03
             </p>
             <h1
               class="reveal display text-black text-7xl sm:text-8xl lg:text-[11rem]"
               style="animation-delay:320ms"
             >
-              Te<span class="font-medium">rra</span>
+              Au<span class="font-medium">rum</span>
             </h1>
             <p
               class="reveal mt-6 max-w-xl text-lg sm:text-xl text-stone-600 leading-relaxed"
               style="animation-delay:460ms"
             >
-              Geerdet, warm und von ruhiger Beständigkeit — ein Aussenraum aus
-              Wurzel, Stein und gedörrtem Holz. Ein Stimmungsbild für Farbe,
-              Schrift und Bild.
+              Goldgrün, gediegen und warm — ein Aussenraum im Licht des späten
+              Nachmittags, getragen von geduldigem Olive. Ein Stimmungsbild für
+              Farbe, Schrift und Bild.
             </p>
           </div>
 
@@ -123,15 +123,15 @@ export default () => {
             </div>
           </div>
 
-          {/* Secondary — muted-teal */}
+          {/* Secondary — olive-bark */}
           <div class="reveal" style="animation-delay:240ms">
             <div class="mb-4 flex items-center gap-3">
-              <span class="kicker text-[10px] text-stone-500">Muted Teal</span>
+              <span class="kicker text-[10px] text-stone-500">Olive Bark</span>
               <span class="text-stone-400 text-xs font-mono">secondary</span>
             </div>
             <div class="grid grid-cols-6 sm:grid-cols-11 gap-2 sm:gap-3">
-              {teal.map(([step, hex]) => (
-                <div class="swatch" title={`muted-teal-${step} · ${hex}`}>
+              {bark.map(([step, hex]) => (
+                <div class="swatch" title={`olive-bark-${step} · ${hex}`}>
                   <div
                     class="h-24 sm:h-32 rounded-lg shadow-sm"
                     style={`background:${hex}`}
@@ -155,10 +155,10 @@ export default () => {
               <p class="display text-black text-3xl mt-4">Aussenraum</p>
               <p class="text-stone-500 text-sm mt-2">india-green-50 / 950</p>
             </div>
-            <div class="rounded-2xl border border-muted-teal-200 bg-muted-teal-50 p-7">
-              <span class="kicker text-[10px] text-stone-500">Auf Teal</span>
+            <div class="rounded-2xl border border-olive-bark-200 bg-olive-bark-50 p-7">
+              <span class="kicker text-[10px] text-stone-500">Auf Olive</span>
               <p class="display text-black text-3xl mt-4">Akzent</p>
-              <p class="text-stone-500 text-sm mt-2">muted-teal-50 / 900</p>
+              <p class="text-stone-500 text-sm mt-2">olive-bark-50 / 900</p>
             </div>
             <div class="rounded-2xl border border-stone-200 bg-white p-7">
               <span class="kicker text-[10px] text-stone-500">Auf Weiss</span>
@@ -167,8 +167,6 @@ export default () => {
             </div>
           </div>
         </section>
-
-
 
         {/* ── Typography ──────────────────────────────────────── */}
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
@@ -297,7 +295,7 @@ export default () => {
 
             {/* Caption block — type-on-color placing */}
             <div
-              class="reveal flex flex-col justify-between rounded-3xl border border-muted-teal-200 bg-muted-teal-50 p-8 h-[56vh] min-h-[380px]"
+              class="reveal flex flex-col justify-between rounded-3xl border border-olive-bark-200 bg-olive-bark-50 p-8 h-[56vh] min-h-[380px]"
               style="animation-delay:360ms"
             >
               <span class="kicker text-[10px] text-stone-500">Bild + Wort</span>
@@ -306,7 +304,7 @@ export default () => {
                   Wo das Bild schweigt, setzt die Schrift den Ton.
                 </p>
                 <p class="text-stone-500 text-sm mt-5">
-                  Beschriftungen ruhen auf hellem Teal — die Farbe kommt aus
+                  Beschriftungen ruhen auf hellem Olive — die Farbe kommt aus
                   der Palette, nicht aus der Schrift.
                 </p>
               </div>
@@ -321,19 +319,19 @@ export default () => {
         >
           <div class="flex items-center gap-3">
             <span class="block w-2.5 h-2.5 rounded-full bg-india-green-500" />
-            <span class="block w-2.5 h-2.5 rounded-full bg-muted-teal-500" />
+            <span class="block w-2.5 h-2.5 rounded-full bg-olive-bark-500" />
             <span class="kicker text-[10px] text-stone-500">
-              Mood 02 · Terra — Kummer Gartenbau
+              Mood 03 · Aurum — Kummer Gartenbau
             </span>
           </div>
           <a
-            href="/mood-3"
+            href="/mood-1"
             class="group flex items-center gap-3 text-stone-600"
           >
-            <span class="kicker text-[10px]">Mood 03 ansehen</span>
-            <span class="arrow text-india-green-700 text-lg transition-transform duration-500 group-hover:translate-x-1.5">
-              →
+            <span class="arrow text-india-green-700 text-lg transition-transform duration-500 group-hover:-translate-x-1.5">
+              ←
             </span>
+            <span class="kicker text-[10px]">Mood 01 ansehen</span>
           </a>
         </footer>
       </main>

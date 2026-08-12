@@ -14,12 +14,12 @@ const moods = [
     tagline: "Üppig. Lebendig. Frisch grün.",
     description:
       "Ein Garten, der atmet — saftiges Laub, lichte Klare und die ruhige Kraft des Wachstums.",
-    glow: "rgba(40, 215, 40, 0.16)",
-    shadow: "rgba(24, 129, 24, 0.28)",
-    vein: "linear-gradient(90deg, #188118, #a9efa9)",
-    surface: "linear-gradient(160deg, #ffffff, #ecf7e8)",
-    accent: "text-india-green-700",
-    border: "border-india-green-200",
+    glow: "rgba(255, 174, 0, 0.16)",
+    shadow: "rgba(153, 105, 0, 0.24)",
+    vein: "linear-gradient(90deg, #996900, #ffdf99)",
+    surface: "linear-gradient(160deg, #ffffff, #fff7e5)",
+    accent: "text-mustard-700",
+    border: "border-mustard-200",
   },
   {
     href: "/mood-2",
@@ -28,12 +28,26 @@ const moods = [
     tagline: "Geerdet. Warm. Vollendet in Rinde.",
     description:
       "Wurzeln, Stein und gedörrtes Holz — ein Aussenraum von ruhiger, sonnengewärmter Beständigkeit.",
-    glow: "rgba(195, 121, 60, 0.16)",
-    shadow: "rgba(117, 72, 36, 0.26)",
-    vein: "linear-gradient(90deg, #754824, #e7c9b1)",
-    surface: "linear-gradient(160deg, #ffffff, #f5ece1)",
-    accent: "text-brown-bark-700",
-    border: "border-brown-bark-200",
+    glow: "rgba(98, 157, 98, 0.16)",
+    shadow: "rgba(59, 94, 59, 0.22)",
+    vein: "linear-gradient(90deg, #3b5e3b, #c0d8c0)",
+    surface: "linear-gradient(160deg, #ffffff, #eff5ef)",
+    accent: "text-muted-teal-700",
+    border: "border-muted-teal-200",
+  },
+  {
+    href: "/mood-3",
+    index: "03",
+    name: "Aurum",
+    tagline: "Goldgrün. Gediegen. Warm.",
+    description:
+      "Ein Aussenraum im warmen Licht des späten Nachmittags — gediegen, ruhend, von goldenem Olive getragen.",
+    glow: "rgba(209, 187, 46, 0.16)",
+    shadow: "rgba(125, 112, 28, 0.24)",
+    vein: "linear-gradient(90deg, #7d701c, #ede4ab)",
+    surface: "linear-gradient(160deg, #ffffff, #faf8ea)",
+    accent: "text-olive-bark-700",
+    border: "border-olive-bark-200",
   },
 ];
 
@@ -69,7 +83,7 @@ export default () => {
             class="reveal kicker text-[11px] text-stone-500 mb-7"
             style="animation-delay:260ms"
           >
-            Zwei Richtungen · eine Vision
+            Drei Richtungen · eine Vision
           </p>
 
           <h1
@@ -85,7 +99,7 @@ export default () => {
             class="reveal mt-8 max-w-xl text-lg sm:text-xl text-stone-600 leading-relaxed"
             style="animation-delay:460ms"
           >
-            Wir haben zwei gestalterische Stimmungen für Ihren Aussenraum
+            Wir haben drei gestalterische Stimmungen für Ihren Aussenraum
             entwickelt. Treffen Sie eine Wahl — und tauchen Sie ein in die
             Atmosphäre, die am besten zu Ihnen passt.
           </p>
@@ -96,7 +110,7 @@ export default () => {
           />
 
           {/* Mood selector */}
-          <div class="mt-12 grid gap-6 sm:grid-cols-2 sm:gap-7 lg:gap-8">
+          <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-7 lg:gap-8">
             {moods.map((mood, i) => (
               <a
                 href={mood.href}

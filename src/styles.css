@@ -57,6 +57,19 @@
   --color-muted-teal-800: #273f27;
   --color-muted-teal-900: #141f14;
   --color-muted-teal-950: #0e160e;
+
+  /* Olive Bark — secondary accent for the Aurum direction (mood-3) */
+  --color-olive-bark-50: #faf8ea;
+  --color-olive-bark-100: #f6f1d5;
+  --color-olive-bark-200: #ede4ab;
+  --color-olive-bark-300: #e3d682;
+  --color-olive-bark-400: #dac958;
+  --color-olive-bark-500: #d1bb2e;
+  --color-olive-bark-600: #a79625;
+  --color-olive-bark-700: #7d701c;
+  --color-olive-bark-800: #544b12;
+  --color-olive-bark-900: #2a2509;
+  --color-olive-bark-950: #1d1a06;
 }
 
 /* ----------------------------------------------------------------------------
@@ -281,15 +294,15 @@ body {
 }
 
 /* ----------------------------------------------------------------------------
-   Terra scope (mood-2) — calm, professional Lexend, warm-toned photography
+   Lexend scope — calm, professional Lexend, warm-toned photography (mood-2 + mood-3)
    ------------------------------------------------------------------------- */
-.terra {
+.lexend {
   font-family: var(--font-terra);
 }
-.terra .kicker {
+.lexend .kicker {
   font-family: var(--font-terra);
 }
-.terra .display {
+.lexend .display {
   font-family: var(--font-terra);
   font-variation-settings: normal;
   line-height: 1.02;
@@ -297,6 +310,6 @@ body {
   font-weight: 700;
 }
 /* Warm the natural photography toward earthy tones. */
-.terra img {
+.lexend img {
   filter: sepia(0.32) saturate(0.9) hue-rotate(-8deg) brightness(0.97) contrast(1.03);
 }
