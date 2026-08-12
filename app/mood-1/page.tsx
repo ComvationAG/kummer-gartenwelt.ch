@@ -205,11 +205,7 @@ export default () => {
 
             {/* Text + CTA */}
             <div class="reveal" style="animation-delay:240ms">
-              <span class="inline-flex items-center gap-2 rounded-full border border-mustard-200 bg-mustard-50 px-3 py-1">
-                <span class="block w-2 h-2 rounded-full bg-mustard-500" />
-                <span class="kicker text-[10px] text-mustard-700">Aussenraum</span>
-              </span>
-              <h3 class="display text-black text-3xl sm:text-4xl mt-6">
+              <h3 class="display text-black text-3xl sm:text-4xl">
                 Ihr Garten, von Grund auf geplant.
               </h3>
               <p class="text-stone-600 text-lg leading-relaxed mt-5 max-w-md">
@@ -217,13 +213,6 @@ export default () => {
                 Aussenräume, die leben und mitwachsen — ruhend, lichterfüllt
                 und auf Sie zugeschnitten.
               </p>
-              <div class="mt-6 flex items-center gap-2">
-                <span class="inline-block w-5 h-5 rounded-full bg-india-green-500" />
-                <span class="inline-block w-5 h-5 rounded-full bg-mustard-500" />
-                <span class="text-stone-500 text-sm ml-2">
-                  India Green + Mustard
-                </span>
-              </div>
               <div class="mt-8 flex flex-wrap items-center gap-4">
                 <a
                   href="/"
