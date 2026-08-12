@@ -70,7 +70,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: #f7f6f1;
+  background-color: #f2f7ec;
   color: #1f2a18;
   overflow-x: hidden;
 }
@@ -88,9 +88,9 @@ body {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(120% 90% at 50% -10%, #eaf5e2 0%, transparent 55%),
-    radial-gradient(100% 80% at 100% 100%, #f4ecdd 0%, transparent 52%),
-    linear-gradient(180deg, #fafbf6 0%, #f5f7ef 55%, #f4f1e9 100%);
+    radial-gradient(120% 90% at 50% -10%, #e4f1d6 0%, transparent 55%),
+    radial-gradient(100% 80% at 100% 100%, #ebf2e1 0%, transparent 52%),
+    linear-gradient(180deg, #f5f9f0 0%, #f0f6e8 55%, #ecf3e3 100%);
 }
 
 /* Fine grain to keep surfaces from feeling flat/digital. */
@@ -292,6 +292,13 @@ body {
    ------------------------------------------------------------------------- */
 .terra {
   font-family: var(--font-terra);
+}
+/* Warm, earth-tinted bright canvas — keeps Terra on-brand without going dark. */
+.terra .scene {
+  background:
+    radial-gradient(120% 90% at 50% -10%, #f3e9da 0%, transparent 55%),
+    radial-gradient(100% 80% at 100% 100%, #efe5d4 0%, transparent 52%),
+    linear-gradient(180deg, #faf6ef 0%, #f5efe4 55%, #f1e8da 100%);
 }
 .terra .kicker {
   font-family: var(--font-terra);

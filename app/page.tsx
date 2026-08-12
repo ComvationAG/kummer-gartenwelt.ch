@@ -54,7 +54,7 @@ export default () => {
         >
           <div class="flex items-center gap-3">
             <span class="block w-2.5 h-2.5 rounded-full bg-india-green-500 shadow-[0_0_16px_3px_rgba(40,215,40,0.45)]" />
-            <span class="kicker text-[11px] text-stone-500">
+            <span class="kicker text-[11px] text-india-green-700">
               Kummer Gartenbau
             </span>
           </div>
