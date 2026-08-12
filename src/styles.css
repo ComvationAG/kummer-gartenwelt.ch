@@ -288,6 +288,23 @@ body {
 }
 
 /* ----------------------------------------------------------------------------
+   Verdant scope (mood-1) — Bricolage Grotesque as the single typeface
+   ------------------------------------------------------------------------- */
+.verdant {
+  font-family: var(--font-body);
+}
+.verdant .kicker {
+  font-family: var(--font-body);
+}
+.verdant .display {
+  font-family: var(--font-body);
+  font-variation-settings: "opsz" 96;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* ----------------------------------------------------------------------------
    Terra scope (mood-2) — calm, professional Lexend, warm-toned photography
    ------------------------------------------------------------------------- */
 .terra {

@@ -32,7 +32,7 @@ const shots = {
 
 export default () => {
   return (
-    <>
+    <div class="verdant">
       <div class="scene" aria-hidden="true" />
       <div class="bloom bloom-verdant" aria-hidden="true" />
       <div class="scene-grain" aria-hidden="true" />
@@ -78,7 +78,7 @@ export default () => {
               class="reveal display text-black text-7xl sm:text-8xl lg:text-[11rem]"
               style="animation-delay:320ms"
             >
-              Ver<em class="italic font-light">dant</em>
+              Ver<em class="font-light">dant</em>
             </h1>
             <p
               class="reveal mt-6 max-w-xl text-lg sm:text-xl text-stone-600 leading-relaxed"
@@ -187,52 +187,53 @@ export default () => {
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
           <div class="reveal flex items-baseline justify-between mb-16">
             <h2 class="display text-black text-4xl sm:text-5xl">Typografie</h2>
-            <span class="kicker text-[10px] text-stone-500">Fraunces · Bricolage</span>
+            <span class="kicker text-[10px] text-stone-500">Bricolage Grotesque</span>
           </div>
 
-          {/* Display face — Fraunces */}
+          {/* Bricolage — single, characterful typeface */}
           <div class="reveal border-t border-india-green-100 pt-10" style="animation-delay:120ms">
             <div class="flex items-baseline justify-between mb-8">
-              <span class="kicker text-[10px] text-stone-500">Display</span>
-              <span class="text-stone-400 text-sm font-mono">Fraunces</span>
+              <span class="kicker text-[10px] text-stone-500">Display & Text</span>
+              <span class="text-stone-400 text-sm font-mono">Bricolage Grotesque · 200–800</span>
             </div>
 
             <p class="display text-black text-6xl sm:text-8xl lg:text-9xl">
-              Garten<em class="italic font-light">bau</em>
+              Garten<em class="font-light">bau</em>
             </p>
 
             <div class="mt-10 flex flex-wrap items-baseline gap-x-10 gap-y-4">
               <span class="display text-stone-800 text-5xl font-light">Light</span>
-              <span class="display text-stone-800 text-5xl">Regular</span>
+              <span class="display text-stone-800 text-5xl font-normal">Regular</span>
+              <span class="display text-stone-800 text-5xl font-medium">Medium</span>
               <span class="display text-stone-800 text-5xl font-semibold">Semibold</span>
               <span class="display text-stone-800 text-5xl font-bold">Bold</span>
             </div>
 
-            <p class="display italic text-stone-700 text-2xl sm:text-3xl mt-10 max-w-2xl font-light leading-snug">
+            <p class="display text-stone-700 text-2xl sm:text-3xl mt-10 max-w-2xl font-light leading-snug">
               „Ein Garten ist die Seele des Hauses — nach aussen getragen.“
             </p>
           </div>
 
-          {/* Body face — Bricolage Grotesque */}
+          {/* Body specimen */}
           <div
             class="reveal border-t border-india-green-100 pt-10 mt-16"
             style="animation-delay:240ms"
           >
             <div class="flex items-baseline justify-between mb-8">
-              <span class="kicker text-[10px] text-stone-500">Text / UI</span>
+              <span class="kicker text-[10px] text-stone-500">Fliesstext / UI</span>
               <span class="text-stone-400 text-sm font-mono">Bricolage Grotesque</span>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12 items-start">
               <div>
                 <p class="text-stone-800 text-xl sm:text-2xl leading-relaxed max-w-xl">
-                  Bricolage Grotesque trägt die Lesefläche — klar, charaktervoll
-                  und mit genug Eigenstand, um neben Fraunces zu bestehen, ohne
-                  zu konkurrieren.
+                  Bricolage Grotesque trägt die gesamte Lesefläche — klar,
+                  charaktervoll und mit genug Eigenstand für Überschrift und
+                  Text zugleich.
                 </p>
                 <p class="text-stone-500 text-base leading-relaxed mt-6 max-w-xl">
-                  Überschriften und Akzente bleiben dem Serif vorbehalten; Fliesstext,
-                  Beschriftungen und Navigation setzen auf die Grotesque.
+                  Hierarchie entsteht über Grösse und Gewicht, nicht über den
+                  Wechsel der Schrift — eine einzige, eigenständige Stimme.
                 </p>
               </div>
 
@@ -244,9 +245,9 @@ export default () => {
                 <span class="text-xl">Aa — 20 px</span>
                 <span class="text-2xl">Aa — 24 px</span>
                 <span class="font-light">Light 200</span>
-                <span>Regular 400</span>
+                <span class="font-normal">Regular 400</span>
+                <span class="font-medium">Medium 500</span>
                 <span class="font-semibold">Semibold 600</span>
-                <span class="font-bold">Bold 800</span>
               </div>
             </div>
           </div>
@@ -256,7 +257,7 @@ export default () => {
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
           <div class="reveal flex items-baseline justify-between mb-14">
             <h2 class="display text-black text-4xl sm:text-5xl">
-              Bild<em class="italic font-light">komposition</em>
+              Bild<em class="font-light">komposition</em>
             </h2>
             <span class="kicker text-[10px] text-stone-500">Platzierung · Rhythmus</span>
           </div>
@@ -349,6 +350,6 @@ export default () => {
           </a>
         </footer>
       </main>
-    </>
+    </div>
   );
 };
