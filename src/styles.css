@@ -143,6 +143,14 @@ body {
   animation: rise-line 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
+/* Hyphenate long German words on small screens to avoid awkward gaps. */
+@media (max-width: 640px) {
+  p, h1, h2, h3, .display {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal, .reveal-soft { opacity: 1; animation: none; }
   .divider-grow { transform: scaleX(1); animation: none; }
