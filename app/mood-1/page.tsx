@@ -39,18 +39,18 @@ export default () => {
 
       {/* Top bar */}
       <header
-        class="reveal sticky top-0 z-30 flex items-center justify-between px-6 sm:px-10 lg:px-16 py-5 backdrop-blur-md bg-[#0a0f0a]/60 border-b border-india-green-900/40"
+        class="reveal sticky top-0 z-30 flex items-center justify-between px-6 sm:px-10 lg:px-16 py-5 backdrop-blur-md bg-white/70 border-b border-india-green-100"
         style="animation-delay:80ms"
       >
         <a href="/" class="group flex items-center gap-3">
-          <span class="arrow text-india-green-300 text-lg transition-transform duration-500 group-hover:-translate-x-1.5">
+          <span class="arrow text-india-green-700 text-lg transition-transform duration-500 group-hover:-translate-x-1.5">
             ←
           </span>
-          <span class="kicker text-[10px] text-stone-300/80">Zurück</span>
+          <span class="kicker text-[10px] text-stone-500">Zurück</span>
         </a>
         <div class="flex items-center gap-3">
-          <span class="block w-2 h-2 rounded-full bg-mustard-400 shadow-[0_0_14px_3px_rgba(255,174,0,0.6)]" />
-          <span class="kicker text-[10px] text-stone-300/80">
+          <span class="block w-2 h-2 rounded-full bg-mustard-500 shadow-[0_0_12px_2px_rgba(255,174,0,0.5)]" />
+          <span class="kicker text-[10px] text-stone-500">
             Mood 01 · Verdant
           </span>
         </div>
@@ -64,24 +64,24 @@ export default () => {
             alt=""
             class="absolute inset-0 h-full w-full object-cover"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-[#060e06] via-[#061e06]/45 to-[#061e06]/30" />
-          <div class="absolute inset-0 bg-gradient-to-r from-[#061e06]/70 to-transparent" />
+          {/* Light scrim rising from the bottom keeps the bright feel + legible dark title. */}
+          <div class="absolute inset-0 bg-gradient-to-t from-white via-white/55 to-transparent" />
 
           <div class="relative z-10 flex h-full flex-col justify-end px-6 sm:px-10 lg:px-16 pb-20">
             <p
-              class="reveal kicker text-[11px] text-mustard-300 mb-6"
+              class="reveal kicker text-[11px] text-mustard-700 mb-6"
               style="animation-delay:240ms"
             >
               Gestaltungsrichtung 01
             </p>
             <h1
-              class="reveal display text-stone-50 text-7xl sm:text-8xl lg:text-[11rem]"
+              class="reveal display text-india-green-950 text-7xl sm:text-8xl lg:text-[11rem]"
               style="animation-delay:320ms"
             >
-              Ver<em class="italic font-light text-india-green-300">dant</em>
+              Ver<em class="italic font-light text-india-green-600">dant</em>
             </h1>
             <p
-              class="reveal mt-6 max-w-xl text-lg sm:text-xl text-stone-200/90 leading-relaxed"
+              class="reveal mt-6 max-w-xl text-lg sm:text-xl text-stone-600 leading-relaxed"
               style="animation-delay:460ms"
             >
               Üppig, lebendig, frisch grün — akzentuiert vom warmen Gold der
@@ -89,7 +89,7 @@ export default () => {
             </p>
           </div>
 
-          <div class="scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-india-green-300/70 text-2xl">
+          <div class="scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-india-green-600/70 text-2xl">
             ↓
           </div>
         </section>
@@ -97,26 +97,26 @@ export default () => {
         {/* ── Palette ──────────────────────────────────────────── */}
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
           <div class="reveal flex items-baseline justify-between mb-14">
-            <h2 class="display text-stone-50 text-4xl sm:text-5xl">Palette</h2>
-            <span class="kicker text-[10px] text-stone-500">Primär · Sekundär</span>
+            <h2 class="display text-india-green-950 text-4xl sm:text-5xl">Palette</h2>
+            <span class="kicker text-[10px] text-stone-400">Primär · Sekundär</span>
           </div>
 
           {/* Primary — india-green */}
           <div class="reveal mb-12" style="animation-delay:120ms">
             <div class="mb-4 flex items-center gap-3">
-              <span class="kicker text-[10px] text-india-green-300">India Green</span>
-              <span class="text-stone-500 text-xs font-mono">primary</span>
+              <span class="kicker text-[10px] text-india-green-700">India Green</span>
+              <span class="text-stone-400 text-xs font-mono">primary</span>
             </div>
             <div class="grid grid-cols-6 sm:grid-cols-11 gap-2 sm:gap-3">
               {green.map(([step, hex]) => (
                 <div class="swatch" title={`india-green-${step} · ${hex}`}>
                   <div
-                    class="h-24 sm:h-32 rounded-lg"
+                    class="h-24 sm:h-32 rounded-lg shadow-sm"
                     style={`background:${hex}`}
                   />
                   <div class="mt-2 flex items-center justify-between">
-                    <span class="text-[10px] text-stone-400 font-mono">{step}</span>
-                    <span class="hex text-[9px] text-stone-500 font-mono">{hex}</span>
+                    <span class="text-[10px] text-stone-500 font-mono">{step}</span>
+                    <span class="hex text-[9px] text-stone-400 font-mono">{hex}</span>
                   </div>
                 </div>
               ))}
@@ -126,19 +126,19 @@ export default () => {
           {/* Secondary — mustard */}
           <div class="reveal" style="animation-delay:240ms">
             <div class="mb-4 flex items-center gap-3">
-              <span class="kicker text-[10px] text-mustard-300">Mustard</span>
-              <span class="text-stone-500 text-xs font-mono">secondary</span>
+              <span class="kicker text-[10px] text-mustard-700">Mustard</span>
+              <span class="text-stone-400 text-xs font-mono">secondary</span>
             </div>
             <div class="grid grid-cols-6 sm:grid-cols-11 gap-2 sm:gap-3">
               {mustard.map(([step, hex]) => (
                 <div class="swatch" title={`mustard-${step} · ${hex}`}>
                   <div
-                    class="h-24 sm:h-32 rounded-lg"
+                    class="h-24 sm:h-32 rounded-lg shadow-sm"
                     style={`background:${hex}`}
                   />
                   <div class="mt-2 flex items-center justify-between">
-                    <span class="text-[10px] text-stone-400 font-mono">{step}</span>
-                    <span class="hex text-[9px] text-stone-500 font-mono">{hex}</span>
+                    <span class="text-[10px] text-stone-500 font-mono">{step}</span>
+                    <span class="hex text-[9px] text-stone-400 font-mono">{hex}</span>
                   </div>
                 </div>
               ))}
@@ -150,33 +150,33 @@ export default () => {
             class="reveal mt-14 grid sm:grid-cols-3 gap-4"
             style="animation-delay:360ms"
           >
-            <div class="rounded-2xl border border-india-green-800/60 bg-india-green-950/60 p-7">
-              <span class="kicker text-[10px] text-india-green-300">Auf Grün</span>
-              <p class="display text-stone-50 text-3xl mt-4">Aussenraum</p>
-              <p class="text-stone-400 text-sm mt-2">india-green-950 / 50</p>
+            <div class="rounded-2xl border border-india-green-200 bg-india-green-50 p-7">
+              <span class="kicker text-[10px] text-india-green-700">Auf Grün</span>
+              <p class="display text-india-green-950 text-3xl mt-4">Aussenraum</p>
+              <p class="text-stone-500 text-sm mt-2">india-green-50 / 950</p>
             </div>
-            <div class="rounded-2xl border border-mustard-700/60 bg-mustard-500 p-7">
-              <span class="kicker text-[10px] text-mustard-950/80">Auf Senf</span>
-              <p class="display text-mustard-950 text-3xl mt-4">Akzent</p>
-              <p class="text-mustard-900/80 text-sm mt-2">mustard-500 / 950</p>
+            <div class="rounded-2xl border border-mustard-200 bg-mustard-50 p-7">
+              <span class="kicker text-[10px] text-mustard-700">Auf Senf</span>
+              <p class="display text-mustard-900 text-3xl mt-4">Akzent</p>
+              <p class="text-stone-500 text-sm mt-2">mustard-50 / 900</p>
             </div>
-            <div class="rounded-2xl border border-india-green-700/60 bg-india-green-700 p-7">
-              <span class="kicker text-[10px] text-india-green-50/80">Mittelgrün</span>
-              <p class="display text-india-green-50 text-3xl mt-4">Balance</p>
-              <p class="text-india-green-100/80 text-sm mt-2">india-green-700 / 50</p>
+            <div class="rounded-2xl border border-stone-200 bg-white p-7">
+              <span class="kicker text-[10px] text-stone-500">Auf Weiss</span>
+              <p class="display text-stone-900 text-3xl mt-4">Balance</p>
+              <p class="text-stone-500 text-sm mt-2">white / stone-900</p>
             </div>
           </div>
         </section>
 
         {/* ── Palette ticker ──────────────────────────────────── */}
-        <div class="overflow-hidden border-y border-india-green-900/40 py-5 bg-india-green-950/30">
+        <div class="overflow-hidden border-y border-india-green-100 py-5 bg-white/60">
           <div class="ticker-track">
             {[...green, ...mustard, ...green, ...mustard].map(([, hex], i) => (
               <span
                 key={i}
-                class="mx-6 flex items-center gap-3 whitespace-nowrap text-stone-400 font-mono text-xs"
+                class="mx-6 flex items-center gap-3 whitespace-nowrap text-stone-500 font-mono text-xs"
               >
-                <span class="inline-block w-4 h-4 rounded-full" style={`background:${hex}`} />
+                <span class="inline-block w-4 h-4 rounded-full shadow-sm" style={`background:${hex}`} />
                 {hex}
               </span>
             ))}
@@ -186,57 +186,57 @@ export default () => {
         {/* ── Typography ──────────────────────────────────────── */}
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
           <div class="reveal flex items-baseline justify-between mb-16">
-            <h2 class="display text-stone-50 text-4xl sm:text-5xl">Typografie</h2>
-            <span class="kicker text-[10px] text-stone-500">Fraunces · Bricolage</span>
+            <h2 class="display text-india-green-950 text-4xl sm:text-5xl">Typografie</h2>
+            <span class="kicker text-[10px] text-stone-400">Fraunces · Bricolage</span>
           </div>
 
           {/* Display face — Fraunces */}
-          <div class="reveal border-t border-india-green-900/50 pt-10" style="animation-delay:120ms">
+          <div class="reveal border-t border-india-green-100 pt-10" style="animation-delay:120ms">
             <div class="flex items-baseline justify-between mb-8">
-              <span class="kicker text-[10px] text-mustard-300">Display</span>
-              <span class="text-stone-500 text-sm font-mono">Fraunces</span>
+              <span class="kicker text-[10px] text-mustard-700">Display</span>
+              <span class="text-stone-400 text-sm font-mono">Fraunces</span>
             </div>
 
-            <p class="display text-stone-50 text-6xl sm:text-8xl lg:text-9xl">
-              Garten<em class="italic font-light text-india-green-300">bau</em>
+            <p class="display text-india-green-950 text-6xl sm:text-8xl lg:text-9xl">
+              Garten<em class="italic font-light text-india-green-600">bau</em>
             </p>
 
             <div class="mt-10 flex flex-wrap items-baseline gap-x-10 gap-y-4">
-              <span class="display text-stone-100 text-5xl font-light">Light</span>
-              <span class="display text-stone-100 text-5xl">Regular</span>
-              <span class="display text-stone-100 text-5xl font-semibold">Semibold</span>
-              <span class="display text-stone-100 text-5xl font-bold">Bold</span>
+              <span class="display text-stone-800 text-5xl font-light">Light</span>
+              <span class="display text-stone-800 text-5xl">Regular</span>
+              <span class="display text-stone-800 text-5xl font-semibold">Semibold</span>
+              <span class="display text-stone-800 text-5xl font-bold">Bold</span>
             </div>
 
-            <p class="display italic text-stone-300 text-2xl sm:text-3xl mt-10 max-w-2xl font-light leading-snug">
+            <p class="display italic text-india-green-800 text-2xl sm:text-3xl mt-10 max-w-2xl font-light leading-snug">
               „Ein Garten ist die Seele des Hauses — nach aussen getragen.“
             </p>
           </div>
 
           {/* Body face — Bricolage Grotesque */}
           <div
-            class="reveal border-t border-india-green-900/50 pt-10 mt-16"
+            class="reveal border-t border-india-green-100 pt-10 mt-16"
             style="animation-delay:240ms"
           >
             <div class="flex items-baseline justify-between mb-8">
-              <span class="kicker text-[10px] text-mustard-300">Text / UI</span>
-              <span class="text-stone-500 text-sm font-mono">Bricolage Grotesque</span>
+              <span class="kicker text-[10px] text-mustard-700">Text / UI</span>
+              <span class="text-stone-400 text-sm font-mono">Bricolage Grotesque</span>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12 items-start">
               <div>
-                <p class="text-stone-100 text-xl sm:text-2xl leading-relaxed max-w-xl">
+                <p class="text-stone-800 text-xl sm:text-2xl leading-relaxed max-w-xl">
                   Bricolage Grotesque trägt die Lesefläche — klar, charaktervoll
                   und mit genug Eigenstand, um neben Fraunces zu bestehen, ohne
                   zu konkurrieren.
                 </p>
-                <p class="text-stone-400 text-base leading-relaxed mt-6 max-w-xl">
+                <p class="text-stone-500 text-base leading-relaxed mt-6 max-w-xl">
                   Überschriften und Akzente bleiben dem Serif vorbehalten; Fliesstext,
                   Beschriftungen und Navigation setzen auf die Grotesque.
                 </p>
               </div>
 
-              <div class="grid grid-cols-2 gap-x-8 gap-y-3 text-stone-200">
+              <div class="grid grid-cols-2 gap-x-8 gap-y-3 text-stone-700">
                 <span class="text-xs">Aa — 12 px</span>
                 <span class="text-sm">Aa — 14 px</span>
                 <span class="text-base">Aa — 16 px</span>
@@ -255,10 +255,10 @@ export default () => {
         {/* ── Image composition ──────────────────────────────── */}
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
           <div class="reveal flex items-baseline justify-between mb-14">
-            <h2 class="display text-stone-50 text-4xl sm:text-5xl">
-              Bild<em class="italic font-light text-india-green-300">komposition</em>
+            <h2 class="display text-india-green-950 text-4xl sm:text-5xl">
+              Bild<em class="italic font-light text-india-green-600">komposition</em>
             </h2>
-            <span class="kicker text-[10px] text-stone-500">Platzierung · Rhythmus</span>
+            <span class="kicker text-[10px] text-stone-400">Platzierung · Rhythmus</span>
           </div>
 
           {/* Full-bleed statement image */}
@@ -266,7 +266,7 @@ export default () => {
             <img src={shots.d} alt="" />
             <div class="absolute z-10 left-7 bottom-7">
               <span class="kicker text-[10px] text-mustard-300">Full-bleed</span>
-              <p class="display text-stone-50 text-3xl sm:text-4xl mt-2">
+              <p class="display text-white text-3xl sm:text-4xl mt-2">
                 Bild als Bühne
               </p>
             </div>
@@ -278,14 +278,14 @@ export default () => {
               <img src={shots.b} alt="" />
               <div class="absolute z-10 left-6 bottom-6">
                 <span class="kicker text-[10px] text-mustard-300">3 / 5</span>
-                <p class="display text-stone-50 text-2xl mt-2">Spannung</p>
+                <p class="display text-white text-2xl mt-2">Spannung</p>
               </div>
             </div>
             <div class="reveal img-frame rounded-3xl h-[52vh] min-h-[380px] sm:col-span-2" style="animation-delay:300ms">
               <img src={shots.c} alt="" />
               <div class="absolute z-10 left-6 bottom-6">
                 <span class="kicker text-[10px] text-mustard-300">2 / 5</span>
-                <p class="display text-stone-50 text-2xl mt-2">Atmen</p>
+                <p class="display text-white text-2xl mt-2">Atmen</p>
               </div>
             </div>
           </div>
@@ -296,29 +296,29 @@ export default () => {
               <img src={shots.a} alt="" />
               <div class="absolute z-10 left-6 bottom-6">
                 <span class="kicker text-[10px] text-mustard-300">Porträt</span>
-                <p class="display text-stone-50 text-2xl mt-2">Hochformat</p>
+                <p class="display text-white text-2xl mt-2">Hochformat</p>
               </div>
             </div>
             <div class="reveal img-frame rounded-3xl h-[56vh] min-h-[380px]" style="animation-delay:260ms">
               <img src={shots.e} alt="" />
               <div class="absolute z-10 left-6 bottom-6">
                 <span class="kicker text-[10px] text-mustard-300">Porträt</span>
-                <p class="display text-stone-50 text-2xl mt-2">Stimmung</p>
+                <p class="display text-white text-2xl mt-2">Stimmung</p>
               </div>
             </div>
 
             {/* Caption block instead of a third image — shows type-on-color placing */}
             <div
-              class="reveal flex flex-col justify-between rounded-3xl border border-india-green-800/60 bg-gradient-to-br from-india-green-900/70 to-india-green-950/70 p-8 h-[56vh] min-h-[380px]"
+              class="reveal flex flex-col justify-between rounded-3xl border border-india-green-200 bg-india-green-50 p-8 h-[56vh] min-h-[380px]"
               style="animation-delay:360ms"
             >
-              <span class="kicker text-[10px] text-mustard-300">Bild + Wort</span>
+              <span class="kicker text-[10px] text-mustard-700">Bild + Wort</span>
               <div>
-                <p class="display text-india-green-200 text-3xl leading-snug">
+                <p class="display text-india-green-900 text-3xl leading-snug">
                   Wo das Bild schweigt, setzt die Schrift den Ton.
                 </p>
-                <p class="text-stone-400 text-sm mt-5">
-                  Beschriftungen ruhen auf verdunkeltem Grün — mustard als
+                <p class="text-stone-500 text-sm mt-5">
+                  Beschriftungen ruhen auf hellem Grün — mustard als
                   Wegweiser für Hierarchie.
                 </p>
               </div>
@@ -328,22 +328,22 @@ export default () => {
 
         {/* ── Footer ─────────────────────────────────────────── */}
         <footer
-          class="reveal-soft flex flex-col sm:flex-row items-center justify-between gap-4 px-6 sm:px-10 lg:px-16 py-12 border-t border-india-green-900/40"
+          class="reveal-soft flex flex-col sm:flex-row items-center justify-between gap-4 px-6 sm:px-10 lg:px-16 py-12 border-t border-india-green-100"
           style="animation-delay:200ms"
         >
           <div class="flex items-center gap-3">
-            <span class="block w-2.5 h-2.5 rounded-full bg-india-green-400" />
-            <span class="block w-2.5 h-2.5 rounded-full bg-mustard-400" />
-            <span class="kicker text-[10px] text-stone-400">
+            <span class="block w-2.5 h-2.5 rounded-full bg-india-green-500" />
+            <span class="block w-2.5 h-2.5 rounded-full bg-mustard-500" />
+            <span class="kicker text-[10px] text-stone-500">
               Mood 01 · Verdant — Kummer Gartenbau
             </span>
           </div>
           <a
             href="/mood-2"
-            class="group flex items-center gap-3 text-stone-300"
+            class="group flex items-center gap-3 text-stone-600"
           >
             <span class="kicker text-[10px]">Nächste Richtung</span>
-            <span class="arrow text-india-green-300 text-lg transition-transform duration-500 group-hover:translate-x-1.5">
+            <span class="arrow text-india-green-700 text-lg transition-transform duration-500 group-hover:translate-x-1.5">
               →
             </span>
           </a>
