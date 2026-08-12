@@ -32,7 +32,7 @@ const shots = {
 
 export default () => {
   return (
-    <div class="verdant">
+    <div class="bricolage">
       <div class="scene" aria-hidden="true" />
       <div class="bloom bloom-verdant" aria-hidden="true" />
       <div class="scene-grain" aria-hidden="true" />

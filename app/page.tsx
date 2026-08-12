@@ -39,7 +39,7 @@ const moods = [
 
 export default () => {
   return (
-    <>
+    <div class="bricolage">
       {/* Atmosphere */}
       <div class="scene" aria-hidden="true" />
       <div class="bloom bloom-verdant" aria-hidden="true" />
@@ -77,7 +77,7 @@ export default () => {
             style="animation-delay:340ms"
           >
             Ein Garten, der zu{" "}
-            <em class="italic font-medium">Ihnen</em>{" "}
+            <em class="font-medium">Ihnen</em>{" "}
             spricht.
           </h1>
 
@@ -149,6 +149,6 @@ export default () => {
           <span class="text-stone-400">Erstellt zur Präsentation — Variantenauswahl</span>
         </footer>
       </main>
-    </>
+    </div>
   );
 };

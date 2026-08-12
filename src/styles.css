@@ -288,15 +288,15 @@ body {
 }
 
 /* ----------------------------------------------------------------------------
-   Verdant scope (mood-1) — Bricolage Grotesque as the single typeface
+   Bricolage scope — Bricolage Grotesque as the single typeface (home + mood-1)
    ------------------------------------------------------------------------- */
-.verdant {
+.bricolage {
   font-family: var(--font-body);
 }
-.verdant .kicker {
+.bricolage .kicker {
   font-family: var(--font-body);
 }
-.verdant .display {
+.bricolage .display {
   font-family: var(--font-body);
   font-variation-settings: "opsz" 96;
   line-height: 1.0;
