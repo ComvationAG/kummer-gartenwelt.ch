@@ -95,15 +95,15 @@ export default () => {
             class="reveal grid sm:grid-cols-3 gap-4"
             style="animation-delay:120ms"
           >
-            <div class="rounded-2xl border border-india-green-200 bg-india-green-50 p-7">
-              <span class="kicker text-[10px] text-stone-500">Auf Grün</span>
-              <p class="display text-black text-3xl mt-4">Aussenraum</p>
-              <p class="text-stone-500 text-sm mt-2">india-green-50 / 950</p>
+            <div class="rounded-2xl border border-india-green-700 bg-india-green-500 p-7">
+              <span class="kicker text-[10px] text-india-green-900">Auf Grün</span>
+              <p class="display text-india-green-950 text-3xl mt-4">Aussenraum</p>
+              <p class="text-india-green-900 text-sm mt-2">india-green-500</p>
             </div>
-            <div class="rounded-2xl border border-olive-bark-200 bg-olive-bark-50 p-7">
-              <span class="kicker text-[10px] text-stone-500">Auf Olive</span>
-              <p class="display text-black text-3xl mt-4">Akzent</p>
-              <p class="text-stone-500 text-sm mt-2">olive-bark-50 / 900</p>
+            <div class="rounded-2xl border border-olive-bark-700 bg-olive-bark-500 p-7">
+              <span class="kicker text-[10px] text-olive-bark-900">Auf Olive</span>
+              <p class="display text-olive-bark-950 text-3xl mt-4">Akzent</p>
+              <p class="text-olive-bark-900 text-sm mt-2">olive-bark-500</p>
             </div>
             <div class="rounded-2xl border border-stone-200 bg-white p-7">
               <span class="kicker text-[10px] text-stone-500">Auf Weiss</span>
