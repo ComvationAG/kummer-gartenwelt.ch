@@ -293,12 +293,12 @@ body {
 .terra {
   font-family: var(--font-terra);
 }
-/* Warm, earth-tinted bright canvas — keeps Terra on-brand without going dark. */
+/* Warm olive-green-tinted bright canvas — earthy Terra mood, harmonised with the india-green primary. */
 .terra .scene {
   background:
-    radial-gradient(120% 90% at 50% -10%, #f3e9da 0%, transparent 55%),
-    radial-gradient(100% 80% at 100% 100%, #efe5d4 0%, transparent 52%),
-    linear-gradient(180deg, #faf6ef 0%, #f5efe4 55%, #f1e8da 100%);
+    radial-gradient(120% 90% at 50% -10%, #eef0da 0%, transparent 55%),
+    radial-gradient(100% 80% at 100% 100%, #e9eeda 0%, transparent 52%),
+    linear-gradient(180deg, #f7f8ef 0%, #f1f3e7 55%, #edf0e2 100%);
 }
 .terra .kicker {
   font-family: var(--font-terra);
