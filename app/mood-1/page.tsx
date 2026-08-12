@@ -5,18 +5,6 @@ export const metadata: Metadata = {
   description: "Gestaltungsrichtung Verdant: Palette, Typografie und Bildkomposition.",
 };
 
-const green = [
-  ["50", "#e9fbe9"], ["100", "#d4f7d4"], ["200", "#a9efa9"], ["300", "#7ee77e"],
-  ["400", "#53df53"], ["500", "#28d728"], ["600", "#20ac20"], ["700", "#188118"],
-  ["800", "#105610"], ["900", "#082b08"], ["950", "#061e06"],
-];
-
-const mustard = [
-  ["50", "#fff7e5"], ["100", "#ffefcc"], ["200", "#ffdf99"], ["300", "#ffcf66"],
-  ["400", "#ffbe33"], ["500", "#ffae00"], ["600", "#cc8b00"], ["700", "#996900"],
-  ["800", "#664600"], ["900", "#332300"], ["950", "#241800"],
-];
-
 // Stable Unsplash CDN urls — verdant garden / foliage imagery for the mood board.
 const img = (id: string, w: number, h: number) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&h=${h}&q=80`;
@@ -28,6 +16,7 @@ const shots = {
   c: img("1441974231531-c6227db76b6e", 900, 900),
   d: img("1502082553048-f009c37129b9", 1200, 800),
   e: img("1545241047-6083a3684587", 900, 1100),
+  ex: img("1503602642458-232111445657", 1200, 900),
 };
 
 export default () => {
@@ -101,54 +90,10 @@ export default () => {
             <span class="kicker text-[10px] text-stone-500">Primär · Sekundär</span>
           </div>
 
-          {/* Primary — india-green */}
-          <div class="reveal mb-12" style="animation-delay:120ms">
-            <div class="mb-4 flex items-center gap-3">
-              <span class="kicker text-[10px] text-stone-500">India Green</span>
-              <span class="text-stone-400 text-xs font-mono">primary</span>
-            </div>
-            <div class="grid grid-cols-6 sm:grid-cols-11 gap-2 sm:gap-3">
-              {green.map(([step, hex]) => (
-                <div class="swatch" title={`india-green-${step} · ${hex}`}>
-                  <div
-                    class="h-24 sm:h-32 rounded-lg shadow-sm"
-                    style={`background:${hex}`}
-                  />
-                  <div class="mt-2 flex items-center justify-between">
-                    <span class="text-[10px] text-stone-500 font-mono">{step}</span>
-                    <span class="hex text-[9px] text-stone-400 font-mono">{hex}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Secondary — mustard */}
-          <div class="reveal" style="animation-delay:240ms">
-            <div class="mb-4 flex items-center gap-3">
-              <span class="kicker text-[10px] text-stone-500">Mustard</span>
-              <span class="text-stone-400 text-xs font-mono">secondary</span>
-            </div>
-            <div class="grid grid-cols-6 sm:grid-cols-11 gap-2 sm:gap-3">
-              {mustard.map(([step, hex]) => (
-                <div class="swatch" title={`mustard-${step} · ${hex}`}>
-                  <div
-                    class="h-24 sm:h-32 rounded-lg shadow-sm"
-                    style={`background:${hex}`}
-                  />
-                  <div class="mt-2 flex items-center justify-between">
-                    <span class="text-[10px] text-stone-500 font-mono">{step}</span>
-                    <span class="hex text-[9px] text-stone-400 font-mono">{hex}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Accent pairing demo */}
           <div
-            class="reveal mt-14 grid sm:grid-cols-3 gap-4"
-            style="animation-delay:360ms"
+            class="reveal grid sm:grid-cols-3 gap-4"
+            style="animation-delay:120ms"
           >
             <div class="rounded-2xl border border-india-green-200 bg-india-green-50 p-7">
               <span class="kicker text-[10px] text-stone-500">Auf Grün</span>
@@ -234,6 +179,65 @@ export default () => {
                 <span class="font-normal">Regular 400</span>
                 <span class="font-medium">Medium 500</span>
                 <span class="font-semibold">Semibold 600</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Beispiel ───────────────────────────────────────── */}
+        <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
+          <div class="reveal flex items-baseline justify-between mb-14">
+            <h2 class="display text-black text-4xl sm:text-5xl">Beispiel</h2>
+            <span class="kicker text-[10px] text-stone-500">In Anwendung</span>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* Image */}
+            <div class="reveal img-frame rounded-3xl h-[54vh] min-h-[380px]" style="animation-delay:120ms">
+              <img src={shots.ex} alt="" />
+              <div class="absolute z-10 left-6 bottom-6">
+                <span class="kicker text-[10px] text-stone-300">Beispiel</span>
+                <p class="display text-white text-2xl sm:text-3xl mt-2">
+                  Sitzplatz im Grün
+                </p>
+              </div>
+            </div>
+
+            {/* Text + CTA */}
+            <div class="reveal" style="animation-delay:240ms">
+              <span class="inline-flex items-center gap-2 rounded-full border border-mustard-200 bg-mustard-50 px-3 py-1">
+                <span class="block w-2 h-2 rounded-full bg-mustard-500" />
+                <span class="kicker text-[10px] text-mustard-700">Aussenraum</span>
+              </span>
+              <h3 class="display text-black text-3xl sm:text-4xl mt-6">
+                Ihr Garten, von Grund auf geplant.
+              </h3>
+              <p class="text-stone-600 text-lg leading-relaxed mt-5 max-w-md">
+                Vom ersten Entwurf bis zur fertigen Anlage gestalten wir
+                Aussenräume, die leben und mitwachsen — ruhend, lichterfüllt
+                und auf Sie zugeschnitten.
+              </p>
+              <div class="mt-6 flex items-center gap-2">
+                <span class="inline-block w-5 h-5 rounded-full bg-india-green-500" />
+                <span class="inline-block w-5 h-5 rounded-full bg-mustard-500" />
+                <span class="text-stone-500 text-sm ml-2">
+                  India Green + Mustard
+                </span>
+              </div>
+              <div class="mt-8 flex flex-wrap items-center gap-4">
+                <a
+                  href="/"
+                  class="inline-flex items-center gap-2 rounded-full bg-india-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-india-green-700"
+                >
+                  Beratung anfragen
+                  <span class="arrow">→</span>
+                </a>
+                <a
+                  href="/"
+                  class="font-medium text-mustard-700 underline-offset-4 hover:underline"
+                >
+                  Referenzen ansehen
+                </a>
               </div>
             </div>
           </div>
