@@ -45,18 +45,18 @@
   --color-mustard-900: #332300;
   --color-mustard-950: #241800;
 
-  /* Olive Wood — secondary accent for the Terra direction */
-  --color-olive-wood-50: #f5f3ef;
-  --color-olive-wood-100: #ece8df;
-  --color-olive-wood-200: #d9d1bf;
-  --color-olive-wood-300: #c6ba9f;
-  --color-olive-wood-400: #b3a280;
-  --color-olive-wood-500: #9f8b60;
-  --color-olive-wood-600: #806f4d;
-  --color-olive-wood-700: #605439;
-  --color-olive-wood-800: #403826;
-  --color-olive-wood-900: #201c13;
-  --color-olive-wood-950: #16130d;
+  /* Muted Teal — secondary accent for the Terra direction */
+  --color-muted-teal-50: #eff5ef;
+  --color-muted-teal-100: #e0ebe0;
+  --color-muted-teal-200: #c0d8c0;
+  --color-muted-teal-300: #a1c4a1;
+  --color-muted-teal-400: #82b082;
+  --color-muted-teal-500: #629d62;
+  --color-muted-teal-600: #4f7d4f;
+  --color-muted-teal-700: #3b5e3b;
+  --color-muted-teal-800: #273f27;
+  --color-muted-teal-900: #141f14;
+  --color-muted-teal-950: #0e160e;
 }
 
 /* ----------------------------------------------------------------------------
@@ -296,7 +296,7 @@ body {
   letter-spacing: -0.012em;
   font-weight: 700;
 }
-/* Warm the natural photography toward earthy olive/bark tones. */
+/* Warm the natural photography toward earthy tones. */
 .terra img {
   filter: sepia(0.32) saturate(0.9) hue-rotate(-8deg) brightness(0.97) contrast(1.03);
 }

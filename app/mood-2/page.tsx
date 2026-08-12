@@ -11,10 +11,10 @@ const green = [
   ["800", "#105610"], ["900", "#082b08"], ["950", "#061e06"],
 ];
 
-const olive = [
-  ["50", "#f5f3ef"], ["100", "#ece8df"], ["200", "#d9d1bf"], ["300", "#c6ba9f"],
-  ["400", "#b3a280"], ["500", "#9f8b60"], ["600", "#806f4d"], ["700", "#605439"],
-  ["800", "#403826"], ["900", "#201c13"], ["950", "#16130d"],
+const teal = [
+  ["50", "#eff5ef"], ["100", "#e0ebe0"], ["200", "#c0d8c0"], ["300", "#a1c4a1"],
+  ["400", "#82b082"], ["500", "#629d62"], ["600", "#4f7d4f"], ["700", "#3b5e3b"],
+  ["800", "#273f27"], ["900", "#141f14"], ["950", "#0e160e"],
 ];
 
 // Verified-loading Unsplash CDN URLs — natural imagery, warmed by the .terra filter.
@@ -49,7 +49,7 @@ export default () => {
           <span class="kicker text-[10px] text-stone-500">Zurück</span>
         </a>
         <div class="flex items-center gap-3">
-          <span class="block w-2 h-2 rounded-full bg-olive-wood-500 shadow-[0_0_12px_2px_rgba(159,139,96,0.5)]" />
+          <span class="block w-2 h-2 rounded-full bg-muted-teal-500 shadow-[0_0_12px_2px_rgba(98,157,98,0.5)]" />
           <span class="kicker text-[10px] text-stone-500">
             Mood 02 · Terra
           </span>
@@ -123,15 +123,15 @@ export default () => {
             </div>
           </div>
 
-          {/* Secondary — olive-wood */}
+          {/* Secondary — muted-teal */}
           <div class="reveal" style="animation-delay:240ms">
             <div class="mb-4 flex items-center gap-3">
-              <span class="kicker text-[10px] text-stone-500">Olive Wood</span>
+              <span class="kicker text-[10px] text-stone-500">Muted Teal</span>
               <span class="text-stone-400 text-xs font-mono">secondary</span>
             </div>
             <div class="grid grid-cols-6 sm:grid-cols-11 gap-2 sm:gap-3">
-              {olive.map(([step, hex]) => (
-                <div class="swatch" title={`olive-wood-${step} · ${hex}`}>
+              {teal.map(([step, hex]) => (
+                <div class="swatch" title={`muted-teal-${step} · ${hex}`}>
                   <div
                     class="h-24 sm:h-32 rounded-lg shadow-sm"
                     style={`background:${hex}`}
@@ -155,10 +155,10 @@ export default () => {
               <p class="display text-black text-3xl mt-4">Aussenraum</p>
               <p class="text-stone-500 text-sm mt-2">india-green-50 / 950</p>
             </div>
-            <div class="rounded-2xl border border-olive-wood-200 bg-olive-wood-50 p-7">
-              <span class="kicker text-[10px] text-stone-500">Auf Olive</span>
+            <div class="rounded-2xl border border-muted-teal-200 bg-muted-teal-50 p-7">
+              <span class="kicker text-[10px] text-stone-500">Auf Teal</span>
               <p class="display text-black text-3xl mt-4">Akzent</p>
-              <p class="text-stone-500 text-sm mt-2">olive-wood-50 / 900</p>
+              <p class="text-stone-500 text-sm mt-2">muted-teal-50 / 900</p>
             </div>
             <div class="rounded-2xl border border-stone-200 bg-white p-7">
               <span class="kicker text-[10px] text-stone-500">Auf Weiss</span>
@@ -297,7 +297,7 @@ export default () => {
 
             {/* Caption block — type-on-color placing */}
             <div
-              class="reveal flex flex-col justify-between rounded-3xl border border-olive-wood-200 bg-olive-wood-50 p-8 h-[56vh] min-h-[380px]"
+              class="reveal flex flex-col justify-between rounded-3xl border border-muted-teal-200 bg-muted-teal-50 p-8 h-[56vh] min-h-[380px]"
               style="animation-delay:360ms"
             >
               <span class="kicker text-[10px] text-stone-500">Bild + Wort</span>
@@ -306,7 +306,7 @@ export default () => {
                   Wo das Bild schweigt, setzt die Schrift den Ton.
                 </p>
                 <p class="text-stone-500 text-sm mt-5">
-                  Beschriftungen ruhen auf hellem Olive — die Farbe kommt aus
+                  Beschriftungen ruhen auf hellem Teal — die Farbe kommt aus
                   der Palette, nicht aus der Schrift.
                 </p>
               </div>
@@ -321,7 +321,7 @@ export default () => {
         >
           <div class="flex items-center gap-3">
             <span class="block w-2.5 h-2.5 rounded-full bg-india-green-500" />
-            <span class="block w-2.5 h-2.5 rounded-full bg-olive-wood-500" />
+            <span class="block w-2.5 h-2.5 rounded-full bg-muted-teal-500" />
             <span class="kicker text-[10px] text-stone-500">
               Mood 02 · Terra — Kummer Gartenbau
             </span>
