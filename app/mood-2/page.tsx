@@ -77,7 +77,7 @@ export default () => {
               class="reveal display text-black text-7xl sm:text-8xl lg:text-[11rem]"
               style="animation-delay:320ms"
             >
-              Te<span class="font-light">rra</span>
+              Te<span class="font-medium">rra</span>
             </h1>
             <p
               class="reveal mt-6 max-w-xl text-lg sm:text-xl text-stone-600 leading-relaxed"
@@ -198,7 +198,7 @@ export default () => {
             </div>
 
             <p class="display text-black text-6xl sm:text-8xl lg:text-9xl">
-              Garten<span class="font-light">bau</span>
+              Garten<span class="font-medium">bau</span>
             </p>
 
             <div class="mt-10 flex flex-wrap items-baseline gap-x-10 gap-y-4">
@@ -209,7 +209,7 @@ export default () => {
               <span class="display text-stone-800 text-5xl font-bold">Bold</span>
             </div>
 
-            <p class="display text-stone-700 text-2xl sm:text-3xl mt-10 max-w-2xl font-light leading-snug">
+            <p class="display text-stone-700 text-2xl sm:text-3xl mt-10 max-w-2xl font-medium leading-snug">
               „Ein Garten ist die Seele des Hauses — nach aussen getragen.“
             </p>
           </div>

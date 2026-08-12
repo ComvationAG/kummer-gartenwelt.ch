@@ -14,14 +14,14 @@ export default () => {
         </p>
 
         <h1
-          class="reveal display text-black text-7xl sm:text-9xl"
+          class="reveal display text-black font-bold text-7xl sm:text-9xl"
           style="animation-delay:220ms"
         >
-          4<span class="italic font-light">0</span>4
+          4<span class="italic font-medium">0</span>4
         </h1>
 
         <p
-          class="reveal display italic text-stone-600 text-2xl sm:text-3xl mt-6 font-light"
+          class="reveal display italic text-stone-600 text-2xl sm:text-3xl mt-6 font-medium"
           style="animation-delay:360ms"
         >
           Hier wächst vorerst nichts.

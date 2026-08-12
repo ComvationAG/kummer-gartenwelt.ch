@@ -78,7 +78,7 @@ export default () => {
               class="reveal display text-black text-7xl sm:text-8xl lg:text-[11rem]"
               style="animation-delay:320ms"
             >
-              Ver<em class="font-light">dant</em>
+              Ver<em class="font-medium">dant</em>
             </h1>
             <p
               class="reveal mt-6 max-w-xl text-lg sm:text-xl text-stone-600 leading-relaxed"
@@ -198,7 +198,7 @@ export default () => {
             </div>
 
             <p class="display text-black text-6xl sm:text-8xl lg:text-9xl">
-              Garten<em class="font-light">bau</em>
+              Garten<em class="font-medium">bau</em>
             </p>
 
             <div class="mt-10 flex flex-wrap items-baseline gap-x-10 gap-y-4">
@@ -209,7 +209,7 @@ export default () => {
               <span class="display text-stone-800 text-5xl font-bold">Bold</span>
             </div>
 
-            <p class="display text-stone-700 text-2xl sm:text-3xl mt-10 max-w-2xl font-light leading-snug">
+            <p class="display text-stone-700 text-2xl sm:text-3xl mt-10 max-w-2xl font-medium leading-snug">
               „Ein Garten ist die Seele des Hauses — nach aussen getragen.“
             </p>
           </div>
@@ -257,7 +257,7 @@ export default () => {
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
           <div class="reveal flex items-baseline justify-between mb-14">
             <h2 class="display text-black text-4xl sm:text-5xl">
-              Bild<em class="font-light">komposition</em>
+              Bild<em class="font-medium">komposition</em>
             </h2>
             <span class="kicker text-[10px] text-stone-500">Platzierung · Rhythmus</span>
           </div>

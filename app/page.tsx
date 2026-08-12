@@ -73,11 +73,11 @@ export default () => {
           </p>
 
           <h1
-            class="reveal display text-black text-5xl sm:text-7xl lg:text-8xl max-w-4xl"
+            class="reveal display text-black font-bold text-5xl sm:text-7xl lg:text-8xl max-w-4xl"
             style="animation-delay:340ms"
           >
             Ein Garten, der zu{" "}
-            <em class="italic font-light">Ihnen</em>{" "}
+            <em class="italic font-medium">Ihnen</em>{" "}
             spricht.
           </h1>
 
@@ -113,7 +113,7 @@ export default () => {
                     </span>
                   </div>
 
-                  <h2 class="display text-stone-900 text-4xl sm:text-5xl mt-8">
+                  <h2 class="display text-stone-900 font-bold text-4xl sm:text-5xl mt-8">
                     {mood.name}
                   </h2>
                   <p class={`mt-2 text-base ${mood.accent} font-medium`}>
