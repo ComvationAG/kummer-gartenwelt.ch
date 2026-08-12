@@ -14,10 +14,10 @@ export default () => {
         </p>
 
         <h1
-          class="reveal display text-stone-900 text-7xl sm:text-9xl"
+          class="reveal display text-black text-7xl sm:text-9xl"
           style="animation-delay:220ms"
         >
-          4<span class="italic text-india-green-600 font-light">0</span>4
+          4<span class="italic font-light">0</span>4
         </h1>
 
         <p

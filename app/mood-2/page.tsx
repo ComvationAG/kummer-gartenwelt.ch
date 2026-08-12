@@ -68,16 +68,16 @@ export default () => {
 
           <div class="relative z-10 flex h-full flex-col justify-end px-6 sm:px-10 lg:px-16 pb-20">
             <p
-              class="reveal kicker text-[11px] text-olive-wood-700 mb-6"
+              class="reveal kicker text-[11px] text-stone-500 mb-6"
               style="animation-delay:240ms"
             >
               Gestaltungsrichtung 02
             </p>
             <h1
-              class="reveal display text-india-green-950 text-7xl sm:text-8xl lg:text-[11rem]"
+              class="reveal display text-black text-7xl sm:text-8xl lg:text-[11rem]"
               style="animation-delay:320ms"
             >
-              Te<span class="font-light text-india-green-600">rra</span>
+              Te<span class="font-light">rra</span>
             </h1>
             <p
               class="reveal mt-6 max-w-xl text-lg sm:text-xl text-stone-600 leading-relaxed"
@@ -89,7 +89,7 @@ export default () => {
             </p>
           </div>
 
-          <div class="scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-india-green-600/70 text-2xl">
+          <div class="scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-stone-400 text-2xl">
             ↓
           </div>
         </section>
@@ -97,14 +97,14 @@ export default () => {
         {/* ── Palette ──────────────────────────────────────────── */}
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
           <div class="reveal flex items-baseline justify-between mb-14">
-            <h2 class="display text-india-green-950 text-4xl sm:text-5xl">Palette</h2>
-            <span class="kicker text-[10px] text-stone-400">Primär · Sekundär</span>
+            <h2 class="display text-black text-4xl sm:text-5xl">Palette</h2>
+            <span class="kicker text-[10px] text-stone-500">Primär · Sekundär</span>
           </div>
 
           {/* Primary — india-green */}
           <div class="reveal mb-12" style="animation-delay:120ms">
             <div class="mb-4 flex items-center gap-3">
-              <span class="kicker text-[10px] text-india-green-700">India Green</span>
+              <span class="kicker text-[10px] text-stone-500">India Green</span>
               <span class="text-stone-400 text-xs font-mono">primary</span>
             </div>
             <div class="grid grid-cols-6 sm:grid-cols-11 gap-2 sm:gap-3">
@@ -126,7 +126,7 @@ export default () => {
           {/* Secondary — olive-wood */}
           <div class="reveal" style="animation-delay:240ms">
             <div class="mb-4 flex items-center gap-3">
-              <span class="kicker text-[10px] text-olive-wood-700">Olive Wood</span>
+              <span class="kicker text-[10px] text-stone-500">Olive Wood</span>
               <span class="text-stone-400 text-xs font-mono">secondary</span>
             </div>
             <div class="grid grid-cols-6 sm:grid-cols-11 gap-2 sm:gap-3">
@@ -151,18 +151,18 @@ export default () => {
             style="animation-delay:360ms"
           >
             <div class="rounded-2xl border border-india-green-200 bg-india-green-50 p-7">
-              <span class="kicker text-[10px] text-india-green-700">Auf Grün</span>
-              <p class="display text-india-green-950 text-3xl mt-4">Aussenraum</p>
+              <span class="kicker text-[10px] text-stone-500">Auf Grün</span>
+              <p class="display text-black text-3xl mt-4">Aussenraum</p>
               <p class="text-stone-500 text-sm mt-2">india-green-50 / 950</p>
             </div>
             <div class="rounded-2xl border border-olive-wood-200 bg-olive-wood-50 p-7">
-              <span class="kicker text-[10px] text-olive-wood-700">Auf Olive</span>
-              <p class="display text-olive-wood-900 text-3xl mt-4">Akzent</p>
+              <span class="kicker text-[10px] text-stone-500">Auf Olive</span>
+              <p class="display text-black text-3xl mt-4">Akzent</p>
               <p class="text-stone-500 text-sm mt-2">olive-wood-50 / 900</p>
             </div>
             <div class="rounded-2xl border border-stone-200 bg-white p-7">
               <span class="kicker text-[10px] text-stone-500">Auf Weiss</span>
-              <p class="display text-stone-900 text-3xl mt-4">Balance</p>
+              <p class="display text-black text-3xl mt-4">Balance</p>
               <p class="text-stone-500 text-sm mt-2">white / stone-900</p>
             </div>
           </div>
@@ -186,19 +186,19 @@ export default () => {
         {/* ── Typography ──────────────────────────────────────── */}
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
           <div class="reveal flex items-baseline justify-between mb-16">
-            <h2 class="display text-india-green-950 text-4xl sm:text-5xl">Typografie</h2>
-            <span class="kicker text-[10px] text-stone-400">Lexend</span>
+            <h2 class="display text-black text-4xl sm:text-5xl">Typografie</h2>
+            <span class="kicker text-[10px] text-stone-500">Lexend</span>
           </div>
 
           {/* Lexend — single, calm typeface */}
           <div class="reveal border-t border-india-green-100 pt-10" style="animation-delay:120ms">
             <div class="flex items-baseline justify-between mb-8">
-              <span class="kicker text-[10px] text-olive-wood-700">Display & Text</span>
+              <span class="kicker text-[10px] text-stone-500">Display & Text</span>
               <span class="text-stone-400 text-sm font-mono">Lexend · 100–900</span>
             </div>
 
-            <p class="display text-india-green-950 text-6xl sm:text-8xl lg:text-9xl">
-              Garten<span class="font-light text-india-green-600">bau</span>
+            <p class="display text-black text-6xl sm:text-8xl lg:text-9xl">
+              Garten<span class="font-light">bau</span>
             </p>
 
             <div class="mt-10 flex flex-wrap items-baseline gap-x-10 gap-y-4">
@@ -209,7 +209,7 @@ export default () => {
               <span class="display text-stone-800 text-5xl font-bold">Bold</span>
             </div>
 
-            <p class="display text-olive-wood-800 text-2xl sm:text-3xl mt-10 max-w-2xl font-light leading-snug">
+            <p class="display text-stone-700 text-2xl sm:text-3xl mt-10 max-w-2xl font-light leading-snug">
               „Ein Garten ist die Seele des Hauses — nach aussen getragen.“
             </p>
           </div>
@@ -220,7 +220,7 @@ export default () => {
             style="animation-delay:240ms"
           >
             <div class="flex items-baseline justify-between mb-8">
-              <span class="kicker text-[10px] text-olive-wood-700">Fliesstext / UI</span>
+              <span class="kicker text-[10px] text-stone-500">Fliesstext / UI</span>
               <span class="text-stone-400 text-sm font-mono">Lexend</span>
             </div>
 
@@ -256,17 +256,17 @@ export default () => {
         {/* ── Image composition ──────────────────────────────── */}
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
           <div class="reveal flex items-baseline justify-between mb-14">
-            <h2 class="display text-india-green-950 text-4xl sm:text-5xl">
+            <h2 class="display text-black text-4xl sm:text-5xl">
               Bildkomposition
             </h2>
-            <span class="kicker text-[10px] text-stone-400">Platzierung · Rhythmus</span>
+            <span class="kicker text-[10px] text-stone-500">Platzierung · Rhythmus</span>
           </div>
 
           {/* Full-bleed statement image */}
           <div class="reveal img-frame rounded-3xl h-[60vh] min-h-[420px] mb-8" style="animation-delay:120ms">
             <img src={shots.d} alt="" />
             <div class="absolute z-10 left-7 bottom-7">
-              <span class="kicker text-[10px] text-olive-wood-300">Full-bleed</span>
+              <span class="kicker text-[10px] text-stone-300">Full-bleed</span>
               <p class="display text-white text-3xl sm:text-4xl mt-2">
                 Bild als Bühne
               </p>
@@ -278,14 +278,14 @@ export default () => {
             <div class="reveal img-frame rounded-3xl h-[52vh] min-h-[380px] sm:col-span-3" style="animation-delay:200ms">
               <img src={shots.b} alt="" />
               <div class="absolute z-10 left-6 bottom-6">
-                <span class="kicker text-[10px] text-olive-wood-300">3 / 5</span>
+                <span class="kicker text-[10px] text-stone-300">3 / 5</span>
                 <p class="display text-white text-2xl mt-2">Spannung</p>
               </div>
             </div>
             <div class="reveal img-frame rounded-3xl h-[52vh] min-h-[380px] sm:col-span-2" style="animation-delay:300ms">
               <img src={shots.c} alt="" />
               <div class="absolute z-10 left-6 bottom-6">
-                <span class="kicker text-[10px] text-olive-wood-300">2 / 5</span>
+                <span class="kicker text-[10px] text-stone-300">2 / 5</span>
                 <p class="display text-white text-2xl mt-2">Atmen</p>
               </div>
             </div>
@@ -296,14 +296,14 @@ export default () => {
             <div class="reveal img-frame rounded-3xl h-[56vh] min-h-[380px]" style="animation-delay:160ms">
               <img src={shots.a} alt="" />
               <div class="absolute z-10 left-6 bottom-6">
-                <span class="kicker text-[10px] text-olive-wood-300">Porträt</span>
+                <span class="kicker text-[10px] text-stone-300">Porträt</span>
                 <p class="display text-white text-2xl mt-2">Hochformat</p>
               </div>
             </div>
             <div class="reveal img-frame rounded-3xl h-[56vh] min-h-[380px]" style="animation-delay:260ms">
               <img src={shots.e} alt="" />
               <div class="absolute z-10 left-6 bottom-6">
-                <span class="kicker text-[10px] text-olive-wood-300">Porträt</span>
+                <span class="kicker text-[10px] text-stone-300">Porträt</span>
                 <p class="display text-white text-2xl mt-2">Stimmung</p>
               </div>
             </div>
@@ -313,14 +313,14 @@ export default () => {
               class="reveal flex flex-col justify-between rounded-3xl border border-olive-wood-200 bg-olive-wood-50 p-8 h-[56vh] min-h-[380px]"
               style="animation-delay:360ms"
             >
-              <span class="kicker text-[10px] text-olive-wood-700">Bild + Wort</span>
+              <span class="kicker text-[10px] text-stone-500">Bild + Wort</span>
               <div>
-                <p class="display text-olive-wood-900 text-3xl leading-snug">
+                <p class="display text-black text-3xl leading-snug">
                   Wo das Bild schweigt, setzt die Schrift den Ton.
                 </p>
                 <p class="text-stone-500 text-sm mt-5">
-                  Beschriftungen ruhen auf hellem Olive — India Green als
-                  Wegweiser für Hierarchie.
+                  Beschriftungen ruhen auf hellem Olive — die Farbe kommt aus
+                  der Palette, nicht aus der Schrift.
                 </p>
               </div>
             </div>

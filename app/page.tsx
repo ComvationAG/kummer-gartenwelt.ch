@@ -66,18 +66,18 @@ export default () => {
         {/* Hero */}
         <section class="flex-1 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-14 lg:py-20 max-w-6xl">
           <p
-            class="reveal kicker text-[11px] text-india-green-700 mb-7"
+            class="reveal kicker text-[11px] text-stone-500 mb-7"
             style="animation-delay:260ms"
           >
             Zwei Richtungen · eine Vision
           </p>
 
           <h1
-            class="reveal display text-stone-900 text-5xl sm:text-7xl lg:text-8xl max-w-4xl"
+            class="reveal display text-black text-5xl sm:text-7xl lg:text-8xl max-w-4xl"
             style="animation-delay:340ms"
           >
             Ein Garten, der zu{" "}
-            <em class="italic text-india-green-600 font-light">Ihnen</em>{" "}
+            <em class="italic font-light">Ihnen</em>{" "}
             spricht.
           </h1>
 
@@ -91,7 +91,7 @@ export default () => {
           </p>
 
           <div
-            class="reveal divider-grow mt-10 h-px w-40 bg-gradient-to-r from-india-green-500/80 to-transparent"
+            class="reveal divider-grow mt-10 h-px w-40 bg-stone-400"
             style="animation-delay:560ms"
           />
 
