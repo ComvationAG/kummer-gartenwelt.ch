@@ -168,20 +168,7 @@ export default () => {
           </div>
         </section>
 
-        {/* ── Palette ticker ──────────────────────────────────── */}
-        <div class="overflow-hidden border-y border-india-green-100 py-5 bg-white/60">
-          <div class="ticker-track">
-            {[...green, ...olive, ...green, ...olive].map(([, hex], i) => (
-              <span
-                key={i}
-                class="mx-6 flex items-center gap-3 whitespace-nowrap text-stone-500 font-mono text-xs"
-              >
-                <span class="inline-block w-4 h-4 rounded-full shadow-sm" style={`background:${hex}`} />
-                {hex}
-              </span>
-            ))}
-          </div>
-        </div>
+
 
         {/* ── Typography ──────────────────────────────────────── */}
         <section class="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl">
