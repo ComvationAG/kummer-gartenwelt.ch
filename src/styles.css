@@ -70,7 +70,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: #f2f7ec;
+  background-color: #ffffff;
   color: #1f2a18;
   overflow-x: hidden;
 }
@@ -87,31 +87,17 @@ body {
   position: fixed;
   inset: 0;
   z-index: 0;
-  background:
-    radial-gradient(120% 90% at 50% -10%, #e4f1d6 0%, transparent 55%),
-    radial-gradient(100% 80% at 100% 100%, #ebf2e1 0%, transparent 52%),
-    linear-gradient(180deg, #f5f9f0 0%, #f0f6e8 55%, #ecf3e3 100%);
+  background: #ffffff;
 }
 
 /* Fine grain to keep surfaces from feeling flat/digital. */
 .scene-grain {
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0.05;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  display: none;
 }
 
 /* Drifting pastel light blooms — one per mood direction. */
 .bloom {
-  position: fixed;
-  z-index: 1;
-  border-radius: 9999px;
-  filter: blur(90px);
-  pointer-events: none;
-  will-change: transform, opacity;
+  display: none;
 }
 .bloom-verdant {
   width: 46vw;
@@ -309,13 +295,6 @@ body {
    ------------------------------------------------------------------------- */
 .terra {
   font-family: var(--font-terra);
-}
-/* Warm olive-green-tinted bright canvas — earthy Terra mood, harmonised with the india-green primary. */
-.terra .scene {
-  background:
-    radial-gradient(120% 90% at 50% -10%, #eef0da 0%, transparent 55%),
-    radial-gradient(100% 80% at 100% 100%, #e9eeda 0%, transparent 52%),
-    linear-gradient(180deg, #f7f8ef 0%, #f1f3e7 55%, #edf0e2 100%);
 }
 .terra .kicker {
   font-family: var(--font-terra);
