@@ -19,19 +19,6 @@
   --color-india-green-900: #082b08;
   --color-india-green-950: #061e06;
 
-  /* Earthen direction */
-  --color-brown-bark-50: #f9f2eb;
-  --color-brown-bark-100: #f3e4d8;
-  --color-brown-bark-200: #e7c9b1;
-  --color-brown-bark-300: #dbae8a;
-  --color-brown-bark-400: #cf9463;
-  --color-brown-bark-500: #c3793c;
-  --color-brown-bark-600: #9c6130;
-  --color-brown-bark-700: #754824;
-  --color-brown-bark-800: #4e3018;
-  --color-brown-bark-900: #27180c;
-  --color-brown-bark-950: #1b1108;
-
   /* Mustard — secondary accent for the Verdant direction */
   --color-mustard-50: #fff7e5;
   --color-mustard-100: #ffefcc;
@@ -45,20 +32,7 @@
   --color-mustard-900: #332300;
   --color-mustard-950: #241800;
 
-  /* Muted Teal — secondary accent for the Terra direction */
-  --color-muted-teal-50: #eff5ef;
-  --color-muted-teal-100: #e0ebe0;
-  --color-muted-teal-200: #c0d8c0;
-  --color-muted-teal-300: #a1c4a1;
-  --color-muted-teal-400: #82b082;
-  --color-muted-teal-500: #629d62;
-  --color-muted-teal-600: #4f7d4f;
-  --color-muted-teal-700: #3b5e3b;
-  --color-muted-teal-800: #273f27;
-  --color-muted-teal-900: #141f14;
-  --color-muted-teal-950: #0e160e;
-
-  /* Olive Bark — secondary accent for the Aurum direction (mood-3) */
+  /* Olive Bark — secondary accent for the Aurum direction (mood-2) */
   --color-olive-bark-50: #faf8ea;
   --color-olive-bark-100: #f6f1d5;
   --color-olive-bark-200: #ede4ab;
@@ -294,7 +268,7 @@ body {
 }
 
 /* ----------------------------------------------------------------------------
-   Lexend scope — calm, professional Lexend, warm-toned photography (mood-2 + mood-3)
+   Lexend scope — calm, professional Lexend, warm-toned photography (mood-2)
    ------------------------------------------------------------------------- */
 .lexend {
   font-family: var(--font-terra);

@@ -24,20 +24,6 @@ const moods = [
   {
     href: "/mood-2",
     index: "02",
-    name: "Terra",
-    tagline: "Geerdet. Warm. Vollendet in Rinde.",
-    description:
-      "Wurzeln, Stein und gedörrtes Holz — ein Aussenraum von ruhiger, sonnengewärmter Beständigkeit.",
-    glow: "rgba(98, 157, 98, 0.16)",
-    shadow: "rgba(59, 94, 59, 0.22)",
-    vein: "linear-gradient(90deg, #3b5e3b, #c0d8c0)",
-    surface: "linear-gradient(160deg, #ffffff, #eff5ef)",
-    accent: "text-muted-teal-700",
-    border: "border-muted-teal-200",
-  },
-  {
-    href: "/mood-3",
-    index: "03",
     name: "Aurum",
     tagline: "Goldgrün. Gediegen. Warm.",
     description:
@@ -83,7 +69,7 @@ export default () => {
             class="reveal kicker text-[11px] text-stone-500 mb-7"
             style="animation-delay:260ms"
           >
-            Drei Richtungen · eine Vision
+            Zwei Richtungen · eine Vision
           </p>
 
           <h1
@@ -99,7 +85,7 @@ export default () => {
             class="reveal mt-8 max-w-xl text-lg sm:text-xl text-stone-600 leading-relaxed"
             style="animation-delay:460ms"
           >
-            Wir haben drei gestalterische Stimmungen für Ihren Aussenraum
+            Wir haben zwei gestalterische Stimmungen für Ihren Aussenraum
             entwickelt. Treffen Sie eine Wahl — und tauchen Sie ein in die
             Atmosphäre, die am besten zu Ihnen passt.
           </p>
@@ -110,7 +96,7 @@ export default () => {
           />
 
           {/* Mood selector */}
-          <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-7 lg:gap-8">
+          <div class="mt-12 grid gap-6 sm:grid-cols-2 sm:gap-7 lg:gap-8">
             {moods.map((mood, i) => (
               <a
                 href={mood.href}
