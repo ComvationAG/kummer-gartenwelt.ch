@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @theme {
+  /* Type system: a characterful botanical serif paired with a distinctive grotesque. */
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+
+  /* Verdant direction */
   --color-india-green-50: #e9fbe9;
   --color-india-green-100: #d4f7d4;
   --color-india-green-200: #a9efa9;
@@ -13,6 +18,7 @@
   --color-india-green-900: #082b08;
   --color-india-green-950: #061e06;
 
+  /* Earthen direction */
   --color-brown-bark-50: #f9f2eb;
   --color-brown-bark-100: #f3e4d8;
   --color-brown-bark-200: #e7c9b1;
@@ -24,4 +30,177 @@
   --color-brown-bark-800: #4e3018;
   --color-brown-bark-900: #27180c;
   --color-brown-bark-950: #1b1108;
+}
+
+/* ----------------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #0a0f0a;
+  color: #f4f1ea;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-india-green-500);
+  color: #051205;
+}
+
+/* ----------------------------------------------------------------------------
+   Atmosphere — a garden at dusk: deep earth base with drifting green & bark light
+   ------------------------------------------------------------------------- */
+.scene {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(120% 90% at 50% -10%, #12200f 0%, transparent 55%),
+    radial-gradient(100% 80% at 100% 100%, #20140a 0%, transparent 50%),
+    linear-gradient(180deg, #0c140b 0%, #0a0f0a 60%, #0a0d08 100%);
+}
+
+/* Fine grain to break up flat digital surfaces. */
+.scene-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Drifting light blooms — one per mood direction. */
+.bloom {
+  position: fixed;
+  z-index: 1;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+.bloom-verdant {
+  width: 46vw;
+  height: 46vw;
+  left: -8vw;
+  top: 18vh;
+  background: radial-gradient(circle, rgba(40, 215, 40, 0.42), transparent 68%);
+  animation: drift-a 18s ease-in-out infinite;
+}
+.bloom-terra {
+  width: 44vw;
+  height: 44vw;
+  right: -6vw;
+  bottom: 6vh;
+  background: radial-gradient(circle, rgba(195, 121, 60, 0.4), transparent 68%);
+  animation: drift-b 22s ease-in-out infinite;
+}
+
+/* ----------------------------------------------------------------------------
+   Motion
+   ------------------------------------------------------------------------- */
+@keyframes drift-a {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.85; }
+  50%      { transform: translate3d(6vw, -4vh, 0) scale(1.12); opacity: 1; }
+}
+@keyframes drift-b {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.8; }
+  50%      { transform: translate3d(-5vw, 5vh, 0) scale(1.1); opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translate3d(0, 26px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes rise-line {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* Staggered reveal — usage: <div class="reveal" style="animation-delay:..ms"> */
+.reveal {
+  opacity: 0;
+  animation: fade-up 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.reveal-soft {
+  opacity: 0;
+  animation: fade-in 1.4s ease forwards;
+}
+.divider-grow {
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: rise-line 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-soft { opacity: 1; animation: none; }
+  .divider-grow { transform: scaleX(1); animation: none; }
+  .bloom-verdant, .bloom-terra { animation: none; }
+}
+
+/* ----------------------------------------------------------------------------
+   Mood cards
+   ------------------------------------------------------------------------- */
+.mood-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.55s ease;
+  will-change: transform;
+}
+.mood-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 120% at var(--gx, 50%) var(--gy, 0%),
+    var(--glow, rgba(255,255,255,0.18)), transparent 60%);
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+}
+.mood-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 80px -30px var(--shadow, rgba(0,0,0,0.7));
+}
+.mood-card:hover::before { opacity: 1; }
+.mood-card .arrow {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.mood-card:hover .arrow { transform: translateX(10px); }
+
+/* Living edge: a thin gradient vein that brightens on hover. */
+.mood-vein {
+  transform-origin: left center;
+  transform: scaleX(0.35);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.mood-card:hover .mood-vein { transform: scaleX(1); }
+
+/* ----------------------------------------------------------------------------
+   Utilities
+   ------------------------------------------------------------------------- */
+.kicker {
+  font-family: var(--font-body);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+}
+.display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-variation-settings: "opsz" 144;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
 }

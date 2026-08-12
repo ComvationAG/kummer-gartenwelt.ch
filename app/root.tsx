@@ -1,14 +1,26 @@
 import { createUIApp, Launch, Scripts, Meta } from "@huuma/ui/server";
 import { loadStaticFiles } from "@huuma/route/http/tasks/static-files";
 
+const FONTS_HREF =
+  "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap";
+
 const app = createUIApp(
   ({ children, scripts, islands, metadata, transferState }) => {
     return (
-      <html lang="en">
+      <html lang="de">
         <head>
           <Meta metadata={metadata} />
           <Scripts nonce={scripts?.nonce} scripts={scripts?.head} />
-          <title>Hello Huuma</title>
+          <title>Kummer Gartenbau — Gestaltungsvarianten</title>
+          <meta
+            name="description"
+            content="Kummer Gartenbau — zwei gestalterische Richtungen für Ihren Aussenraum."
+          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#0a0f0a" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link rel="stylesheet" href={FONTS_HREF} />
           <link rel="stylesheet" href="/styles.css" />
         </head>
         <body>
@@ -26,8 +38,6 @@ const app = createUIApp(
   },
 );
 
-// Apply additional tasks or middleware here.
 await loadStaticFiles(app);
 
 export default app;
-
